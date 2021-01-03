@@ -1,30 +1,72 @@
 /********** Base styles **********/
 * {
   box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 24px;
 }
 
 h1 {
-  color: blue;
+  font-size: 1.75em;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 p {
-  border: 1px solid black;
-  font-family: Helvetica;
+  padding: 10px;
   width: 90%;
+  margin-top: 50px;
   margin-right: auto;
   margin-left: auto;
+}
+
+.section {
+  background-color: #C6DBAE;
+  position: relative;
+  border: 1px solid black;
+  margin: 10px;
+}
+
+.sectionTitle {
+  position: absolute;
+  border: 1px solid black;
+  color: #FEFEFE;
+  width: 150px;
+  font-size: 1.25em;
+  text-align: center;
+  top: 0;
+  right: 0;
+}
+
+#sectionTitle1 {
+  background-color: #E98D15; 
+}
+
+#sectionTitle2 {
+  background-color: #BF15E9; 
+
+}
+
+#sectionTitle3 {
+  background-color: #C01717; 
 }
 
 /* Simple Responsive Framework. */
 .row {
   width: 100%;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 /********** Desktop devices only **********/
 @media (min-width: 992px) {
   .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
     float: left;
-    border: 1px solid green;
   }
   .col-lg-1 {
     width: 8.33%;
@@ -68,7 +110,6 @@ p {
 @media (min-width: 768px) and (max-width: 991px) {
   .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
     float: left;
-    border: 1px solid green;
   }
   .col-md-1 {
     width: 8.33%;
@@ -112,7 +153,6 @@ p {
 @media (max-width: 767px) {
   .col-sl-1, .col-sl-2, .col-sl-3, .col-sl-4, .col-sl-5, .col-sl-6, .col-sl-7, .col-sl-8, .col-sl-9, .col-sl-10, .col-sl-11, .col-sl-12 {
     float: left;
-    border: 1px solid green;
   }
   .col-sl-1 {
     width: 8.33%;
